@@ -14,12 +14,15 @@ the expected behaviour is something like this:
     /home/olof/github/pam
 
     $ cat rabbit.py
+
     def fn(x):
         return x * 2
 
     $ cat test_rabbit.py
+
     from pam import verify
     from rabbit import fn
+
 
     def test():
         args = [
@@ -27,6 +30,7 @@ the expected behaviour is something like this:
         ]
         verify(fn, args)
 
-    $ make test
+    $ DUT=rabbit make test
   
-.. this will create a virtual environment and run the test.
+.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module.
+
