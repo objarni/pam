@@ -3,7 +3,7 @@
 # Example command line:
 #   DUT=rabbit make test
 
-.PHONY: test lci cover mutate freeze clean
+.PHONY: test lci cover mutate freeze clean install-things
 
 DUTPY=${DUT}.py
 TESTPY=test_${DUT}.py
