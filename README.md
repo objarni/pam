@@ -39,6 +39,8 @@ These make targets are documented and 'production ready':
 
     DUT=<name> make test    # create a Python 3 virtual environment
                             # including pytest, coverage and approvaltests
+                            # in env/ (if it does not already exist)
+                            # and run tests of DUT.
 
     make clean              # remove all artifacts built by make
 
