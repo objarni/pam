@@ -1,6 +1,6 @@
 pam
 ===
-Python ApprovalTests **Makefile** and utility script **pam.py**.
+**P**ython **A**pprovalTests **M**akefile and utility script **pam.py**.
 
 A minimal Makefile to ease practicing Approval Testing in Python.
 
@@ -32,7 +32,7 @@ the expected behaviour is something like this:
 
     $ DUT=rabbit make test
   
-.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module. DUT stands for "Device Under Test".
+.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the **rabbit** module. **DUT** stands for "**D**evice **U**nder **T**est".
 
 
 These make targets are documented and 'production ready':
@@ -40,7 +40,7 @@ These make targets are documented and 'production ready':
     make install-things     # install help tools (meld, entr, surf)
     DUT=<name> make test    # create a Python 3 virtual environment
                             # including pytest, coverage and approvaltests
-                            # in env/ (if it does not already exist)
+                            # in ./env/ (if it does not already exist)
                             # and run tests of DUT.
 
     make clean              # remove all artifacts built by make
