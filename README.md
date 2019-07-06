@@ -37,12 +37,12 @@ the expected behaviour is something like this:
 
 Then these make targets available will be available:
 
-    make test    # create a Python 3 virtual environment including pytest, coverage approvaltests
-    make clean   # remove all artifacts built by make
+    DUT=<name> make test    # create a Python 3 virtual environment including pytest, coverage and approvaltests
+    make clean            # remove all artifacts built by make
 
 
 There are also a couple of w.i.p targets which needs better UX (implicit dependencies currently e.g):
 
-    make cover   # produce a HTML coverage report
-    make lci     # run a 'local CI' loop detecting any modifications to DUT code
-    make mutate  # run cosmic ray mutation testing on DUT
+    DUT=<name> make cover   # produce a HTML coverage report
+    DUT=<name> make lci     # run a 'local CI' loop detecting any modifications to DUT code
+    DUT=<name> make mutate  # run cosmic ray mutation testing on DUT
