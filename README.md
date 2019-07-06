@@ -32,5 +32,15 @@ the expected behaviour is something like this:
 
     $ DUT=rabbit make test
   
-.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module.
+.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module. DUT stands for "Device Under Test".
 
+Some make targets available are:
+
+    make clean   # remove all artifacts built by make
+    make test    # create a Python 3 virtual environment including pytest, coverage approvaltests
+    make lci     # run a 'local CI' loop detecting any modifications to DUT code
+
+There are also a couple of w.i.p targets:
+
+    make cover   # produce a HTML coverage report
+    make mutate  # run cosmic ray mutation testing on DUT
