@@ -35,14 +35,14 @@ the expected behaviour is something like this:
 .. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module. DUT stands for "Device Under Test".
 
 
-Then these make targets available will be available:
+These make targets are documented and 'production ready':
 
     DUT=<name> make test    # create a Python 3 virtual environment including pytest, coverage and approvaltests
-    make clean            # remove all artifacts built by make
+    make clean              # remove all artifacts built by make
 
 
-There are also a couple of w.i.p targets which needs better UX (implicit dependencies currently e.g):
+There are also a couple of w.i.p targets which needs better UX (currently implicit dependencies e.g):
 
-    DUT=<name> make cover   # produce a HTML coverage report
-    DUT=<name> make lci     # run a 'local CI' loop detecting any modifications to DUT code
+    DUT=<name> make cover   # produce a HTML coverage report for <name>
+    DUT=<name> make lci     # run a 'local continuous integration ' loop detecting modifications of DUT code and test
     DUT=<name> make mutate  # run cosmic ray mutation testing on DUT
