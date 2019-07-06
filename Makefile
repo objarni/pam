@@ -14,6 +14,7 @@ ${ENV}:
 
 devenv: ${ENV}
 	( . ${ENV} && pip install approvaltests coverage pytest )
+	sudo apt install meld 
 	touch devenv
 
 clean:
@@ -26,10 +27,7 @@ freeze: devenv
 	( . ${ENV} && pip freeze )
 
 test: devenv
-	( . ${ENV} && USE_MELD=1 NOSE_REDNOSE=1 pytest ${TESTPY} )
-
-lci:
-	( . ${ENV} && ls ${DUTPY} ${TESTPY} | entr -c make test )
+	( . ${ENV} && pytest ${TESTPY} )
 
 cover:
 	( . ${ENV} && \
@@ -37,6 +35,10 @@ cover:
 		coverage report && \
 		coverage html && \
 		surf htmlcov/index.html )
+
+lci:
+	( . ${ENV} && ls ${DUTPY} ${TESTPY} | entr -c make test )
+
 
 mutate:
 	( . ${ENV} && \
