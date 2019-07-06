@@ -7,7 +7,7 @@ A minimal Makefile to ease practicing Approval Testing in Python.
 
 Usage
 -----
-Given files rabbit.py and test_rabbit.py with content as below, copied to pam/ folder, cloned from github, then
+Given files **rabbit.py** and **test_rabbit.py** with content as below, copied to **pam/** folder, cloned from github, then
 the expected behaviour is something like this:
 
     $ pwd
