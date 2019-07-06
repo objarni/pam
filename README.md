@@ -32,7 +32,7 @@ the expected behaviour is something like this:
 
     $ DUT=rabbit make test
   
-.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the rabbit module. DUT stands for "Device Under Test".
+.. this will create a virtual environment and run approval test (ApprovalTest.Python) on the **rabbit** module. **DUT** stands for "**D**evice **U**nder **T**est".
 
 
 These make targets are documented and 'production ready':
