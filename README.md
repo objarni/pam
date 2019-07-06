@@ -1,6 +1,6 @@
 pam
 ===
-Python ApprovalTests **Makefile** and utility script **pam.py**.
+**P**ython **A**pprovalTests **M**akefile and utility script **pam.py**.
 
 A minimal Makefile to ease practicing Approval Testing in Python.
 
