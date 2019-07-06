@@ -5,8 +5,8 @@
 
 .PHONY: test lci cover mutate freeze clean install-things
 
-DUTPY=${DUT}.py
-TESTPY=test_${DUT}.py
+DUTPY=dut/${DUT}.py
+TESTPY=dut/test_${DUT}.py
 ENV=env/bin/activate
 
 ${ENV}:

@@ -103,8 +103,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# PAM
+# pam
 devenv
-*.py
-test_*.py
-*.approved.txt
+dut/*.py
+dut/test_*.py
+dut/*.approved.txt
