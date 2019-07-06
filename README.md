@@ -37,6 +37,7 @@ the expected behaviour is something like this:
 
 These make targets are documented and 'production ready':
 
+    make install-things     # install help tools (meld, entr, surf)
     DUT=<name> make test    # create a Python 3 virtual environment
                             # including pytest, coverage and approvaltests
                             # in env/ (if it does not already exist)

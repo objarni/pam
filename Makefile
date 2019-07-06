@@ -12,9 +12,11 @@ ENV=env/bin/activate
 ${ENV}:
 	python3 -m venv env
 
+install-things:
+	sudo apt install meld entr surf
+
 devenv: ${ENV}
 	( . ${ENV} && pip install approvaltests coverage pytest )
-	sudo apt install meld 
 	touch devenv
 
 clean:
